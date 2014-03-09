@@ -1,0 +1,7 @@
+[user]
+	email = frozenouthere@gmail.com
+	name = "Bucky Frost"
+[push]
+	default = simple
+[core]
+	excludesfile = ~/.config/git/.gitignore
