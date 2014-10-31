@@ -16,7 +16,11 @@ HISTSIZE=3000
 SAVEHIST=6000
 setopt HIST_IGNORE_DUPS 
 setopt appendhistory nomatch notify
-bindkey -v
+bindkey -v # use vi shortcuts
+
+#bindkey '\e[A'  history-search-backward # up arrow for searching the history file that matches the current line
+#bindkey '\e[B'  history-search-forward  # down arrow for searching the history file that matches the current line
+
 # == End of lines configured by zsh-newuser-install ===
 
 # == The following lines were added by compinstall ====
@@ -55,7 +59,7 @@ prompt elite2
 
 #zle -N zle-keymap-select
 
-RPS1="%(?..(%?%)) %~"
+#RPS1="%(?..(%?%)) %~"
 # =====================================================
 
 
@@ -64,6 +68,7 @@ export EDITOR='/usr/bin/vim'
 export XDG_CONFIG_HOME="/home/$USER/.config"
 
 PATH="$HOME/.local/bin:${PATH}"
+PATH="$HOME/.local/scripts:${PATH}"
 PATH="/opt/tau-2.23/x86_64/bin:${PATH}"
 # =====================================================
 
@@ -80,16 +85,19 @@ alias ezsh="$EDITOR $HOME/.zshrc"
 alias szsh="source $HOME/.zshrc"
 
 alias -g L='| less'
+alias -g G='| grep'
 alias -g NUL="> /dev/null 2>&1"
+
+alias hg='history | grep'
 # =====================================================
 
 # == Directory Hashes =================================
+hash -d awesome="$XDG_CONFIG_HOME/awesome"
+hash -d books="$HOME/files/books"
+hash -d downloads="$HOME/Downloads"
 hash -d workspace="$HOME/workspace"
 hash -d www="/var/www"
-hash -d awesome="$XDG_CONFIG_HOME/awesome"
 # =====================================================
 
 # == Shell Variables ==================================
 # =====================================================
-
-
