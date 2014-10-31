@@ -88,7 +88,7 @@ alias -g L='| less'
 alias -g G='| grep'
 alias -g NUL="> /dev/null 2>&1"
 
-alias hg='history | grep'
+alias hg="cat $HISTFILE | grep"
 # =====================================================
 
 # == Directory Hashes =================================
