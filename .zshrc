@@ -80,6 +80,7 @@ alias la='ls -lahF --color=auto'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+alias dirs='dirs -v'
 
 alias ezsh="$EDITOR $HOME/.zshrc"
 alias szsh="source $HOME/.zshrc"
