@@ -16,10 +16,7 @@ HISTSIZE=3000
 SAVEHIST=6000
 setopt HIST_IGNORE_DUPS 
 setopt appendhistory nomatch notify
-bindkey -v # use vi shortcuts
 
-#bindkey '\e[A'  history-search-backward # up arrow for searching the history file that matches the current line
-#bindkey '\e[B'  history-search-forward  # down arrow for searching the history file that matches the current line
 
 # == End of lines configured by zsh-newuser-install ===
 
@@ -45,6 +42,11 @@ setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 # =====================================================
 
+# == Keybindings ====================================== 
+bindkey -v # use vi shortcuts
+
+#bindkey '\e[A'  history-search-backward # up arrow for searching the history file that matches the current line
+#bindkey '\e[B'  history-search-forward  # down arrow for searching the history file that matches the current line
 
 # == Prompt Configuration =============================
 autoload -U promptinit
