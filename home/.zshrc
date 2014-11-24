@@ -51,15 +51,14 @@ autoload -U promptinit
 promptinit
 prompt elite2 
 
-#VIMODE='[i]'
-#function zle-keymap-select {
-#	VIMODE="${${KEYMAP/vicmd/[n]}/(main|viins)/[i]}"
-#	zle reset-prompt
-#}
+function zle-line-init zle-keymap-select {
+	RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+	RPS2=$RPS1
+	zle reset-prompt
+}
 
-#zle -N zle-keymap-select
-
-#RPS1="%(?..(%?%)) %~"
+zle -N zle-line-init
+zle -N zle-keymap-select
 # =====================================================
 
 
