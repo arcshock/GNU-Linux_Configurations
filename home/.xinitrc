@@ -31,35 +31,6 @@ keymapping() {
 }
 
 startup_programs() {
-	xcompmgr -cF &
-	xscreensaver &
+	xcompmgr -cF > /dev/null 2>&1 &
+	xscreensaver > /dev/null 2>&1 &
 }
-
-# start some nice programs
-
-old_start() {
-	if [ -n "`/etc/X11/chooser.sh`" ]; then
-		command="`/etc/X11/chooser.sh`"
-	else
-		failsafe="yes"
-	fi
-
-	if [ -d /etc/X11/xinit/xinitrc.d ] ; then
-		for f in /etc/X11/xinit/xinitrc.d/* ; do
-			[ -x "$f" ] && . "$f"
-		done
-		unset f
-	fi
-
-	if [ -n "$failsafe" ]; then
-		twm &
-		xclock -geometry 50x50-1+1 &
-		xterm -geometry 80x50+494+51 &
-		xterm -geometry 80x20+494-0 &
-		exec xterm -geometry 80x66+0+0 -name login
-	else
-		exec $command
-	fi
-}
-
-main
