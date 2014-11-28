@@ -29,3 +29,5 @@ startup_programs() {
 	xcompmgr -cF > /dev/null 2>&1 &
 	xscreensaver > /dev/null 2>&1 &
 }
+
+main
