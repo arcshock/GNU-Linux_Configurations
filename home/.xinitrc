@@ -3,7 +3,6 @@
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.xmodmap
 sysresources=/etc/X11/xinit/Xresources
-sysmodmap=/etc/X11/xinit/Xmodmap
 
 main() {
 	keymapping
@@ -13,10 +12,6 @@ main() {
 keymapping() {
 	if [ -f $sysresources ]; then
 	    xrdb -merge $sysresources
-	fi
-
-	if [ -f $sysmodmap ]; then
-	    xmodmap $sysmodmap
 	fi
 
 	if [ -f "$userresources" ]; then
