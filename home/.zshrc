@@ -82,6 +82,7 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias dirs='dirs -v'
+alias diff='colordiff'
 
 alias ezsh="$EDITOR $HOME/.zshrc"
 alias szsh="source $HOME/.zshrc"
@@ -99,6 +100,7 @@ hash -d books="$HOME/files/books"
 hash -d downloads="$HOME/Downloads"
 hash -d workspace="$HOME/workspace"
 hash -d www="/var/www"
+hash -d music="$HOME/files/audio/music"
 # =====================================================
 
 # == Shell Variables ==================================
