@@ -66,11 +66,14 @@ zle -N zle-keymap-select
 
 # == Env Variables ====================================
 export EDITOR='/usr/bin/vim'
+export VISUAL='/usb/bin/vim'
 export XDG_CONFIG_HOME="/home/$USER/.config"
 
 PATH="$HOME/.local/bin:${PATH}"
 PATH="$HOME/.local/scripts:${PATH}"
 PATH="/opt/tau-2.23/x86_64/bin:${PATH}"
+
+export SUDO_PROMPT="Password meatbag:"
 # =====================================================
 
 
@@ -97,7 +100,7 @@ alias hg="cat $HISTFILE | grep"
 # == Directory Hashes =================================
 hash -d awesome="$XDG_CONFIG_HOME/awesome"
 hash -d books="$HOME/files/books"
-hash -d downloads="$HOME/Downloads"
+hash -d downloads="$HOME/downloads"
 hash -d workspace="$HOME/workspace"
 hash -d www="/var/www"
 hash -d music="$HOME/files/audio/music"
