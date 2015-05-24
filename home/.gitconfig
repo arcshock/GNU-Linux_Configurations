@@ -5,3 +5,4 @@
 	default = simple
 [core]
 	excludesfile = /home/voot/.config/git/gitignore_global
+	editor = vim
