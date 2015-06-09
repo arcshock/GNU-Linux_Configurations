@@ -64,6 +64,7 @@ zle -N zle-keymap-select
 # =====================================================
 
 source $HOME/.alias
+source $HOME/.zsh_alias
 
 # == Env Variables ====================================
 export EDITOR='/usr/bin/vim'
