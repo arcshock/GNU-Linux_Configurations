@@ -63,6 +63,7 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 # =====================================================
 
+source $HOME/.alias
 
 # == Env Variables ====================================
 export EDITOR='/usr/bin/vim'
@@ -76,26 +77,6 @@ PATH="/opt/tau-2.23/x86_64/bin:${PATH}"
 export SUDO_PROMPT="Password meatbag:"
 # =====================================================
 
-
-# == Aliases ==========================================
-alias ls='ls -F --color=auto'
-alias ll='ls -lhF --color=auto'
-alias la='ls -lahF --color=auto'
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias dirs='dirs -v'
-alias diff='colordiff'
-
-alias ezsh="$EDITOR $HOME/.zshrc"
-alias szsh="source $HOME/.zshrc"
-
-alias -g L='| less'
-alias -g G='| grep'
-alias -g NUL="> /dev/null 2>&1"
-
-alias hg="cat $HISTFILE | grep"
-# =====================================================
 
 # == Directory Hashes =================================
 hash -d awesome="$XDG_CONFIG_HOME/awesome"
