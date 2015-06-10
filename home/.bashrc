@@ -93,10 +93,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -107,8 +103,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.alias ]; then
+    . ~/.alias
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -124,8 +120,6 @@ export EDITOR="vim"
 
 export TAU_HOME="/opt/tau-2.23/x86_64/"
 export TAU_MAKEFILE="$TAU_HOME/lib/Makefile.tau"
-
-#alias ls='ls -l -h --color'
 
 PATH="$HOME/.local/bin:${PATH}"
 PATH="/opt/tau-2.23/x86_64/bin:${PATH}"
