@@ -26,6 +26,10 @@
         {
             "name": "OSNews",
             "url": "http://www.osnews.com/files/recent.xml"
+        },
+        {
+            "name": "Irongeek's Security Site",
+            "url": "http://feeds.feedburner.com/IrongeeksSecuritySite"
         }
     ],
     "tags": {
