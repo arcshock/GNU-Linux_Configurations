@@ -1,0 +1,14 @@
+# == Aliases ==========================================
+alias ls='ls -F --color=auto'
+alias l='ls -CF --color=auto'
+alias ll='ls -lhF --color=auto'
+alias la='ls -lahF --color=auto'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias dirs='dirs -v'
+alias diff='colordiff'
+
+alias hg="cat $HISTFILE | grep"
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# =====================================================

@@ -1,0 +1,42 @@
+{
+    "CantoCurses": {
+        "reader": {
+            "enumerate_links": true
+        }
+    },
+    "defaults": {
+        "global_transform": "None",
+        "keep_time": 86400,
+        "keep_unread": false,
+        "rate": 10
+    },
+    "feeds": [
+        {
+            "name": "Canto",
+            "url": "http://codezen.org/canto-ng/feed/"
+        },
+        {
+            "name": "Slashdot",
+            "url": "http://rss.slashdot.org/slashdot/Slashdot"
+        },
+        {
+            "name": "Reddit",
+            "url": "http://reddit.com/.rss"
+        },
+        {
+            "name": "OSNews",
+            "url": "http://www.osnews.com/files/recent.xml"
+        }
+    ],
+    "tags": {
+        "maintag:Canto": {
+            "collapsed": true
+        },
+        "maintag:Reddit": {
+            "collapsed": true
+        },
+        "maintag:Slashdot": {
+            "collapsed": false
+        }
+    }
+}
