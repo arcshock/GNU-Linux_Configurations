@@ -30,17 +30,34 @@
         {
             "name": "Irongeek's Security Site",
             "url": "http://feeds.feedburner.com/IrongeeksSecuritySite"
+        },
+        {
+            "name": "FOSS Force",
+            "url": "http://fossforce.com/feed/"
+        },
+        {
+            "name": "Network Wold Linux Tycoon",
+            "url": "www.networkworld.com/blog/linux-tycoon/index.rss"
         }
     ],
     "tags": {
         "maintag:Canto": {
             "collapsed": true
         },
+        "maintag:FOSS Force": {
+            "collapsed": true
+        },
+        "maintag:Irongeek's Security Site": {
+            "collapsed": true
+        },
+        "maintag:OSNews": {
+            "collapsed": true
+        },
         "maintag:Reddit": {
             "collapsed": true
         },
         "maintag:Slashdot": {
-            "collapsed": false
+            "collapsed": true
         }
     }
 }
