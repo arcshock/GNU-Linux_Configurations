@@ -70,6 +70,8 @@ source $HOME/.zsh_alias
 export EDITOR='/usr/bin/vim'
 export VISUAL='/usb/bin/vim'
 export XDG_CONFIG_HOME="/home/$USER/.config"
+export XDG_USER_DIR="/home/$USER/"
+export xdg_user_dir="/home/$USER/"
 
 PATH="$HOME/.local/bin:${PATH}"
 PATH="$HOME/.local/scripts:${PATH}"
